@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import IntroHome from '../IntroHome.vue',
-import StoriesHome from '../StoriesHome.vue',
+import IntroHome from '../IntroHome.vue'
+import StoriesHome from '../StoriesHome.vue'
 import FeaturesHome from '../FeaturesHome.vue'
     export default {
         name: 'Home',

@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import TopFeatures from '../TopFeatures.vue',
-import AllFeatures from '../AllFeatures.vue',
+import TopFeatures from '../TopFeatures.vue'
+import AllFeatures from '../AllFeatures.vue'
 import Cta from '../Cta.vue'
     export default {
         name: 'Features',

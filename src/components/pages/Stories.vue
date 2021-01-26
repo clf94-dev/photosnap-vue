@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import TopStories from '../TopStories.vue',
+import TopStories from '../TopStories.vue'
 import AllStories from '../AllStories.vue'
     export default {
        name: 'Stories',
