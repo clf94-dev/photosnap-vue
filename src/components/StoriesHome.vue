@@ -31,6 +31,11 @@
 <script>
     export default {
         name: 'StoriesHome',
+        methods:{
+            goToStories(){
+                this.$router.push('/stories');
+            }
+        },
         data(){
             return{
 arrowW: require("../assets/images/shared/desktop/arrow copy.svg"),
@@ -74,5 +79,92 @@ storiesdata: [
 </script>
 
 <style scoped>
+.stories-row .story-cont {
+  width: 100%;
+}
+
+.stories-row .story-cont .img-col img {
+  z-index: -1 !important;
+  width: 110%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .stories-row .story-cont .img-col img {
+    width: 100% !important;
+  }
+  .stories-row .story-cont .img-col img:hover {
+    scale: 1 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stories-row .story-cont .img-col img {
+    width: 135% !important;
+  }
+  .stories-row .story-cont .img-col img:hover {
+    scale: 1 !important;
+  }
+}
+
+.stories-row .story-cont .img-col img:hover {
+  scale: 1.05;
+}
+
+.stories-row .story-cont .text-col {
+  z-index: 1;
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 40px;
+  width: 270px;
+  color: #ffffff;
+  text-align: start;
+}
+
+@media screen and (max-width: 900px) {
+  .stories-row .story-cont .text-col {
+    margin-top: -25vw;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .stories-row .story-cont .text-col {
+    margin-top: -30vw;
+    margin-left: 20px;
+  }
+}
+
+.stories-row .story-cont .text-col h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stories-row .story-cont .text-col h4 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.stories-row .story-cont .text-col hr {
+  color: #DFDFDF;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.stories-row .story-cont .text-col .btn {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.stories-row .story-cont .text-col .btn:hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 
 </style>
