@@ -1,12 +1,11 @@
 <template>
-    <div>
-
-    </div>
+   
 </template>
 
 <script>
     export default {
-        name: 'StoriesCard'
+        name: 'StoriesCard',
+        
     }
 </script>
 
