@@ -39,5 +39,86 @@
 </script>
 
 <style scoped>
+.intro-row .img-col {
+	width: 58%;
+}
 
+@media screen and (max-width: 500px) {
+	.intro-row .img-col {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+	.intro-row .img-col {
+		width: 42%;
+	}
+}
+
+.intro-row .img-col img {
+	width: 100%;
+	height: 100%;
+}
+
+.intro-row .text-col {
+	width: 42%;
+	padding: 12% 11% 15% 7%;
+}
+
+@media screen and (max-width: 500px) {
+	.intro-row .text-col {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+	.intro-row .text-col {
+		width: 58%;
+	}
+}
+
+.intro-row .text-col h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+.intro-row .text-col p {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 2rem;
+	margin-bottom: 20px;
+}
+
+.intro-row .text-col .btn {
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	font-size: 15px;
+	color: #000000;
+	text-align: start;
+	text-transform: uppercase;
+}
+
+.intro-row .text-col .btn.white {
+	color: #ffffff !important;
+}
+
+.intro-row .text-col .btn:hover {
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.dark {
+	background-color: black;
+	color: white;
+}
+
+@media screen and (min-width: 500px) {
+	.reversed {
+		flex-direction: row-reverse !important;
+	}
+}
 </style>
