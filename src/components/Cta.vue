@@ -34,5 +34,80 @@
 </script>
 
 <style scoped>
+.cta-cont {
+  border-left: 4px solid linear-gradient(to bottom, #5A77FF, #BC7198, #FFC593) !important;
+  
+}
+
+.cta-cont .backg {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.cta-cont .cta-content {
+  padding: 5% 7% 7% !important;
+  text-align: start;
+}
+
+.cta-cont .cta-content .text-col {
+  width: 100%;
+}
+
+
+
+.cta-cont .cta-content .text-col h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 53px;
+}
+
+@media screen and (max-width: 600px) {
+  .cta-cont .cta-content .text-col h2 {
+    font-size: 40px !important;
+  }
+}
+
+@media screen and (min-width: 756px) {
+  .cta-cont .cta-content .text-col h2 {
+    margin-right: 40% ;
+  }
+}
+
+.cta-cont .cta-content .btn-col {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .cta-cont .cta-content .btn-col {
+    width: 50%;
+  }
+}
+
+.cta-cont .cta-content .btn-col .btn {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.cta-cont .cta-content .btn-col .btn.white {
+  color: #ffffff !important;
+}
+
+.cta-cont .cta-content .btn-col .btn:hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-cont .cta-content .btn-col .btn img {
+  width: 43px !important;
+}
 
 </style>
