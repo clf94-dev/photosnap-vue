@@ -9,7 +9,7 @@
       <p>{{info.text}}</p>
       <button :class="info.index===0? 'btn white': 'btn'" @click="info.link && goToStories()">
         <b-row>
-         <b-col xs="8" sm="8" md="8" lg="8">
+         <b-col xs="8" sm="8" md="8" lg="8" >
                    {{info.btn}}
          </b-col >
           <b-col xs="4" sm="4" md="4" lg="4">
@@ -108,7 +108,7 @@
 }
 
 .intro-cont .intro-row .text-col .btn.white {
-	color: #ffffff !important;
+	color: #ffffff;
 }
 
 .intro-cont .intro-row .text-col .btn:hover {
