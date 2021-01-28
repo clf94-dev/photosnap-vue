@@ -45,6 +45,7 @@
 
 .intro-cont .intro-row .img-col {
 	width: 58%;
+	padding: 0;
 }
 
 @media screen and (max-width: 500px) {
