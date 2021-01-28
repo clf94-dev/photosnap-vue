@@ -12,10 +12,10 @@
         </b-row>
            </b-col>
            <b-col class="footer-links col" xs="12" sm="12" md="3" lg="3">
-               <router-link to='/home'> Home</router-link>
-               <router-link to='/stories'> Stories</router-link>
-               <router-link to='/features'> Features</router-link>
-               <router-link to='/pricing'> Pricing</router-link>
+               <router-link to='/home' class="single-link"> Home</router-link>
+               <router-link to='/stories' class="single-link"> Stories</router-link>
+               <router-link to='/features' class="single-link"> Features</router-link>
+               <router-link to='/pricing' class="single-link"> Pricing</router-link>
            </b-col>
            <b-col class="col" xs="12" sm="12" md="3" lg="3"></b-col>
            <b-col class="copy-col col" xs="12" sm="12" md="3" lg="3">
@@ -138,7 +138,7 @@
   text-decoration: none !important;
   color: white;
   font-size: 18px;
-  margin: 12px auto !important;
+  margin: 12px 7px !important;
 }
 
 .footer-section .copy-col .btn {
@@ -151,6 +151,7 @@
   text-align: start;
   text-transform: uppercase;
 }
+
 
 .footer-section .copy-col .btn.white {
   color: #ffffff !important;
