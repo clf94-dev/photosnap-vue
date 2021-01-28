@@ -63,6 +63,7 @@ goToHome(){
 	align-items: center;
 	font-size: 1.2rem;
     background-color: white;
+	margin-bottom: 10px;
 }
 
 .navbar .navbar-cont {
