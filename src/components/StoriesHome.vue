@@ -81,6 +81,7 @@ storiesdata: [
 <style scoped>
 .stories-row .story-cont {
   width: 100%;
+  padding: 0;
 }
 
 .stories-row .story-cont .img-col img {
@@ -146,9 +147,11 @@ storiesdata: [
 }
 
 .stories-row .story-cont .text-col hr {
-  color: #DFDFDF;
+  color: #DFDFDF !important;
   width: 100%;
   margin: 10px auto;
+  border: 1px solid #DFDFDF;
+ 
 }
 
 .stories-row .story-cont .text-col .btn {
