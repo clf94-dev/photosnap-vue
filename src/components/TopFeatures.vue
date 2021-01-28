@@ -27,5 +27,82 @@
 </script>
 
 <style scoped>
+@media screen and (max-width: 480px) {
+	.topfeat-cont {
+		flex-direction: column-reverse;
+	}
+}
 
+.topfeat-cont .text-col {
+	width: 42%;
+	padding: 12% 12% 14% 7% !important;
+	background-color: #000000;
+	height: 100% !important;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+	.topfeat-cont .text-col {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+	.topfeat-cont .text-col {
+		width: 58%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.topfeat-cont .text-col {
+		padding: 45% 7% 10% 7% !important;
+	}
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+	.topfeat-cont .text-col {
+		padding: 25% 7% 27.5% 7% !important;
+	}
+}
+
+.topfeat-cont .text-col h2 {
+	font-size: 48px !important;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.topfeat-cont .text-col p {
+	font-size: 16px !important;
+	margin-bottom: 30px;
+	line-height: 1.5rem;
+}
+
+.topfeat-cont .img-col {
+	width: 58%;
+    padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+	.topfeat-cont .img-col {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+	.topfeat-cont .img-col {
+		width: 42%;
+	}
+}
+
+.topfeat-cont .img-col img {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 720px) {
+	.topfeat-cont .img-col img {
+		width: 100%;
+	}
+}
 </style>
