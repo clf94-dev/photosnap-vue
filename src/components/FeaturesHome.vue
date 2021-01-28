@@ -2,7 +2,7 @@
 
     <b-container fluid>
         <b-row class="feat-cont">
-            <b-col class="feat-card" xs="12"  sm="4" md="4" lg="4" v-for="data of featuresdata" v-bind:key="data.title">
+            <b-col class="feat-card" xs="12"  sm="12" md="4" lg="4" v-for="data of featuresdata" v-bind:key="data.title">
 <img :src="data.src" :alt="data.imgAlt"/>
         <h3>{{data.title}}</h3>
         <p>{{data.text}}</p>
@@ -43,5 +43,34 @@
 </script>
 
 <style scoped>
+.feat-cont {
+	padding: 7%;
+	text-align: center !important;
+	align-items: flex-end;
+}
 
+.feat-cont .feat-card {
+
+	margin-bottom: 50px;
+	padding: 1% 3%;
+}
+
+@media screen and (max-width: 450px) {
+	.feat-cont .feat-card {
+		width: 100% !important;
+	}
+}
+
+.feat-cont .feat-card img {
+	margin-bottom: 20px;
+}
+
+.feat-cont .feat-card h3 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.feat-cont .feat-card p {
+	margin-bottom: 0;
+}
 </style>
