@@ -12,12 +12,12 @@
                 The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.
             </p>
             <button class="btn">
-        <div fxLayout="row wrap">
-          <div fxFlex="66%">READ THE STORY</div>
-          <div fxFlex="33%">
+        <b-row>
+          <b-col xs="8" sm="8" md="8" lg="8">READ THE STORY</b-col>
+          <b-col xs="4" sm="4" md="4" lg="4">
             <img :src="arrowW" alt="arrow" />
-          </div>
-        </div>
+          </b-col>
+        </b-row>
       </button>
         </b-row>
            </b-col>
@@ -109,6 +109,10 @@ arrowW: require("../assets/images/shared/desktop/arrow copy.svg"),
   color: #ffffff;
   text-align: start;
   text-transform: uppercase;
+}
+
+.topStory-cont .text-col .btn:focus {
+ outline: none !important;
 }
 
 .topStory-cont .text-col .btn.white {
