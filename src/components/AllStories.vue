@@ -1,5 +1,5 @@
 <template>
- <b-container>
+ <b-container fluid>
      <b-row class="stories-row">
          <b-col class="story-cont" xs="12" sm="4" md="3" lg="3" v-for="data of storiesdata" v-bind:key="data.title">
 <div class="img-col" >
@@ -184,5 +184,111 @@ storiesdata: [
 </script>
 
 <style scoped>
+.stories-row {
+  background-color: #000000;
+}
+
+.stories-row .story-cont {
+  width: 100%;
+  padding: 0;
+}
+
+.stories-row .story-cont .img-col img {
+  z-index: -1;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .stories-row .story-cont .img-col img {
+    width: 100%;
+  }
+  .stories-row .story-cont .img-col img:hover {
+    scale: 1 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stories-row .story-cont .img-col img {
+    width: 120% !important;
+  }
+  .stories-row .story-cont .img-col img:hover {
+    scale: 1 !important;
+  }
+}
+
+.stories-row .story-cont .img-col img:hover {
+  scale: 1.05;
+}
+
+.stories-row .story-cont .text-col {
+  z-index: 1;
+  text-align: start;
+  position: absolute;
+  top: 70%;
+  left: 25px;
+  width: 270px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .stories-row .story-cont .text-col {
+        position: absolute;
+    top:55%;
+    left: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .stories-row .story-cont .text-col {
+        position: absolute;
+    top:65%;
+    left: 30px;
+  }
+}
+
+
+.stories-row .story-cont .text-col h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stories-row .story-cont .text-col h4 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.stories-row .story-cont .text-col hr {
+  color: #DFDFDF;
+  width: 80%;
+  position:relative;
+  left: -10%;
+  border: 1px solid #DFDFDF ;
+  margin: 10px auto;
+}
+
+.stories-row .story-cont .text-col .btn {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+    .stories-row .story-cont .text-col .btn {
+        width: 60%;
+    }
+}
+
+.stories-row .story-cont .text-col .btn.white {
+  color: #ffffff !important;
+}
+
+.stories-row .story-cont .text-col .btn:hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 
 </style>
