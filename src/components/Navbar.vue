@@ -62,6 +62,7 @@ goToHome(){
 	justify-content: center;
 	align-items: center;
 	font-size: 1.2rem;
+    background-color: white;
 }
 
 .navbar .navbar-cont {
