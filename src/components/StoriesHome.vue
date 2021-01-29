@@ -123,19 +123,14 @@ storiesdata: [
   text-align: start;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (min-width: 600px) {
   .stories-row .story-cont .text-col {
-    margin-top: -25vw;
+    margin-top: -20vw;
     margin-left: 20px;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .stories-row .story-cont .text-col {
-    margin-top: -30vw;
-    margin-left: 20px;
-  }
-}
+
 
 .stories-row .story-cont .text-col h3 {
   font-size: 18px;
