@@ -68,6 +68,7 @@
 .intro-cont .intro-row .text-col {
 	width: 42%;
 	padding: 12% 11% 15% 7%;
+	text-align: start;
 }
 
 @media screen and (max-width: 500px) {
