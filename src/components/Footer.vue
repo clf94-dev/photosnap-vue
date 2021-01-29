@@ -11,8 +11,8 @@
             <i className="fab fa-instagram instag"></i>
         </b-row>
            </b-col>
-           <b-col class="footer-links col" xs="12" sm="12" md="3" lg="3">
-               <router-link to='/home' class="single-link"> Home</router-link>
+           <b-col class="footer-links col" xs="12" sm="12" md="3" lg="3" @click="scrollToTop()">
+               <router-link to='/home' class="single-link" > Home</router-link>
                <router-link to='/stories' class="single-link"> Stories</router-link>
                <router-link to='/features' class="single-link"> Features</router-link>
                <router-link to='/pricing' class="single-link"> Pricing</router-link>
@@ -44,6 +44,11 @@
                 arrowW: require("../assets/images/shared/desktop/arrow copy.svg"),
                 
             }
+        },
+        methods: {
+          scrollToTop() {
+                window.scrollTo(0,0);
+           },
         }
     }
 </script>

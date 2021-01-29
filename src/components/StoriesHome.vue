@@ -34,6 +34,7 @@
         methods:{
             goToStories(){
                 this.$router.push('/stories');
+                 window.scrollTo(0,0);
             }
         },
         data(){

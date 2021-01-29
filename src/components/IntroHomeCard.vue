@@ -34,7 +34,13 @@
                 Arrow: require("../assets/images/shared/desktop/arrow.svg"),
                 ArrowW: require("../assets/images/shared/desktop/arrow copy.svg"),
             }
-        }
+		},
+		methods: {
+			goToStories(){
+				
+				this.$router.push('/stories'); window.scrollTo(0,0);
+			}
+		}
     }
 </script>
 
