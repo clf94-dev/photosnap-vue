@@ -41,7 +41,7 @@
 
 .cta-cont .backg {
   width: 100%;
-  height: 60%;
+  height: 61%;
   position: absolute;
   left: 0;
   z-index: -1;
